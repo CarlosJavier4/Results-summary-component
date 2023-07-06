@@ -34,7 +34,7 @@ body {
     padding: 10px 10px 20px;
     width: 100%;
     background-image: linear-gradient(var(--light-slate-blue-background), var(--light-royal-blue-background));
-    border-radius: 0 0 30px 30px;
+    border-radius: 0 0 20px 20px;
     color: #fff;
     text-align: center;
 }
@@ -64,4 +64,156 @@ p.copy {
 .header__copy .copy {
     width: 90%;
     margin: 0 20px 10px;
+}
+
+.section {
+    width: 90%;
+    margin: 20px auto; 
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;   
+    padding: 15px;
+    margin: 10px;
+    margin-left: 0; /*Para que se pegue al margen left*/
+    margin-bottom: 20px; /*Para dar separacion en cada uno de los items*/
+}
+
+/*Red Color*/
+
+.item__red {
+    background-color: hsla(0, 100%, 67%, 0.123);
+}
+
+.item__red .item__name{
+    color: var(--light-red);
+}
+
+.item__red:hover {
+    --red: hsla(0, 100%, 67%, 0.568);
+    --red-opaco: hsla(0, 100%, 67%, 0.199);
+    background-image: linear-gradient(to right, var(--red), var(--red) 80%, var(--red-opaco), var(--red-opaco) 20%);
+}
+
+/*Yellow Color*/
+
+.item__yellow {
+    background-color:  hsla(39, 100%, 56%, 0.205);
+}
+
+.item__yellow .item__name {
+    color: var(--orangey-yellow);
+}
+
+.item__yellow:hover {
+    --yellow: hsla(39, 100%, 56%, 0.384);
+    --yellow-opaco: hsla(39, 100%, 56%, 0.096);
+    background-image: linear-gradient(to right, var(--yellow), var(--yellow) 92%, var(--yellow-opaco), var(--yellow-opaco) 8%);
+}
+
+/*Green Color*/
+
+.item__green {
+    background-color: hsla(166, 100%, 37%, 0.082);
+}
+
+.item__green .item__name {
+    color: var(--green-teal);
+}
+
+.item__green:hover {
+    --green: hsla(166, 100%, 37%, 0.507);
+    --green-opaco: hsla(166, 100%, 37%, 0.103);
+    background-image: linear-gradient(to right, var(--green), var(--green) 61%, var(--green-opaco), var(--green-opaco) 39%);
+}
+
+/*Blue Cobalt Color*/
+
+.item__cobalt {
+    background-color: hsla(234, 85%, 45%, 0.116);
+}
+
+.item__cobalt .item__name {
+    color: var(--cobalt-blue);
+}
+
+.item__cobalt:hover {
+    --cobalt: hsla(234, 85%, 45%, 0.555);
+    --cobalt-opaco: hsla(234, 85%, 45%, 0.082);
+    background-image: linear-gradient(to right, var(--cobalt), var(--cobalt) 72%, var(--cobalt-opaco), var(--cobalt-opaco) 28%);
+}
+
+.points {
+    color: var(--dark-gray-blue);
+}
+
+.points span {
+    color: #000;
+    font-weight: 700;
+}
+
+.cta {
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: var(--dark-gray-blue);
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        display: flex;
+    }
+
+    .header, .section {
+        height: 100vh*2;
+        width: 50%;
+        border-radius: 30px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .title {
+        font-size: 40px;
+        margin: 20px;
+    }
+
+    .header__status {
+        width: 150px;
+        padding: 30px;
+        box-shadow: 0 0 30px #0000005d;
+    }
+
+    .header__status__title {
+        font-size: 50px;
+    }
+
+    p.copy {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .section {
+        margin: 30px;
+    }
+
+    .section__title {
+        font-size: 25px;
+        margin-bottom: 40px;
+    }
+
+    .item {
+        padding: 30px;
+    }
+
+    .cta {
+        padding: 20px;
+        font-size: 20px;
+    }
 }

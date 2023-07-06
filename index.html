@@ -3,16 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png"/>
   <title>Frontend Mentor | Results summary component</title>
-  <link rel="stylesheet" href="./CSS/style.css">
-
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-  
+  <link rel="stylesheet" href="./CSS/style.css"/>
 </head>
 <body>
 
@@ -27,28 +20,41 @@
           <p class="copy">You scored higher than 65% of the people who have taken these tests.</p>
       </div>
   </header>
-  
-  <main class="section">
-    <!-- Summary
 
-    Reaction
-    80 / 100
-    
-    Memory
-    92 / 100
-    
-    Verbal
-    61 / 100
-    
-    Visual
-    72 / 100
-    
-    Continue -->
-  </main>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main class="section">    
+
+    <h3 class="section__title">Summary</h3>
+
+    <div class="section__items">
+
+      <div class="item item__red">
+          <img src="./assets/images/icon-reaction.svg">
+          <p class="item__name">Reaction</p>
+          <p class="points"><span>80</span> / 100</p>
+      </div>
+
+      <div class="item item__yellow">
+          <img src="./assets/images/icon-memory.svg">
+          <p class="item__name">Memory</p>
+          <p class="points"><span>92</span> / 100</p>
+      </div>
+
+      <div class="item item__green">
+          <img src="./assets/images/icon-verbal.svg">
+          <p class="item__name">Verbal</p>
+          <p class="points"> <span>61</span> / 100</p>
+      </div>
+
+      <div class="item item__cobalt">
+        <img src="./assets/images/icon-visual.svg">
+        <p class="item__name">Visual</p>
+        <p class="points"><span>72</span> / 100</p>
+      </div>
+
+    </div>
+
+    <a href="#" class="cta">Continue</a>
+
+  </main> 
 </body>
 </html>
