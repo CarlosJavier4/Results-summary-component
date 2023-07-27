@@ -8,53 +8,68 @@
   <link rel="stylesheet" href="./CSS/style.css"/>
 </head>
 <body>
+  <div class="body">
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title copy">Your Result</h1>
+          <div class="header__status">
+              <h1 class="header__status__title">76</h1>
+              <p class="copy">of 100</p>
+          </div>
+          <div class="header__copy">
+              <h2 class="copy__title">Great</h2>
+              <p class="copy">You scored higher than 65% of the people who have taken these tests.</p>
+          </div>
+        </div>
+    </header>
+    
+    <main class="section">    
 
-  <header class="header">
-      <h1 class="header__title copy title">Your Result</h1>
-      <div class="header__status">
-          <h1 class="header__status__title">76</h1>
-          <p class="copy">of 100</p>
+      <h3 class="section__title">Summary</h3>
+
+      <div class="section__items">
+
+        <div class="item item__red">
+            <div class="icon">
+              <img src="./assets/images/icon-reaction.svg">
+              <p class="item__name--red">Reaction</p>
+            </div>
+
+            <p class="points"><span>80</span> / 100</p>
+        </div>
+
+        <div class="item item__yellow">
+            <div class="icon">
+              <img src="./assets/images/icon-memory.svg">
+              <p class="item__name--yellow">Memory</p>
+            </div>
+
+            <p class="points"><span>92</span> / 100</p>
+        </div>
+
+        <div class="item item__green">
+            <div class="icon">
+              <img src="./assets/images/icon-verbal.svg">
+              <p class="item__name--green">Verbal</p>
+            </div>
+
+            <p class="points"> <span>61</span> / 100</p>
+        </div>
+
+        <div class="item item__cobalt">
+          <div class="icon">
+            <img src="./assets/images/icon-visual.svg">
+            <p class="item__name--cobalt">Visual</p>
+          </div>
+
+          <p class="points"><span>72</span> / 100</p>
+        </div>
+
       </div>
-      <div class="header__copy">
-          <h2 class="copy__title title">Great</h2>
-          <p class="copy">You scored higher than 65% of the people who have taken these tests.</p>
-      </div>
-  </header>
 
-  <main class="section">    
+      <a href="#" class="cta">Continue</a>
 
-    <h3 class="section__title">Summary</h3>
-
-    <div class="section__items">
-
-      <div class="item item__red">
-          <img src="./assets/images/icon-reaction.svg">
-          <p class="item__name">Reaction</p>
-          <p class="points"><span>80</span> / 100</p>
-      </div>
-
-      <div class="item item__yellow">
-          <img src="./assets/images/icon-memory.svg">
-          <p class="item__name">Memory</p>
-          <p class="points"><span>92</span> / 100</p>
-      </div>
-
-      <div class="item item__green">
-          <img src="./assets/images/icon-verbal.svg">
-          <p class="item__name">Verbal</p>
-          <p class="points"> <span>61</span> / 100</p>
-      </div>
-
-      <div class="item item__cobalt">
-        <img src="./assets/images/icon-visual.svg">
-        <p class="item__name">Visual</p>
-        <p class="points"><span>72</span> / 100</p>
-      </div>
-
-    </div>
-
-    <a href="#" class="cta">Continue</a>
-
-  </main> 
+    </main> 
+  </div>
 </body>
 </html>
