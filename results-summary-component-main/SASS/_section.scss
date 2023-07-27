@@ -1,0 +1,113 @@
+%container-flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.section {
+    width: 90%;
+    margin: 20px auto;
+
+    .section__items {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .item {
+        @extend %container-flex-row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        
+        height: 50px;
+        border-radius: 10px;
+
+        .icon {
+            @extend %container-flex-row;
+            gap: 10px;
+        }
+    }
+}
+
+.section__items {
+
+    .item__red {
+        background-color: hsla(0, 100%, 67%, 0.123);
+    
+        .item__name--red{
+            color: $light-red;
+        }
+    }
+    
+    .item__red:hover {
+        $red: hsla(0, 100%, 67%, 0.568);
+        $red-opaco: hsla(0, 100%, 67%, 0.199);
+        background-image: linear-gradient(to right, $red, $red 80%, $red-opaco, $red-opaco 20%);
+    }   
+
+    .item__yellow {
+        background-color:  hsla(39, 100%, 56%, 0.205);
+        
+        .item__name--yellow {
+            color: $orangey-yellow;
+        }
+    }
+    
+    .item__yellow:hover {
+        $yellow: hsla(39, 100%, 56%, 0.384);
+        $yellow-opaco: hsla(39, 100%, 56%, 0.096);
+        background-image: linear-gradient(to right, $yellow, $yellow 92%, $yellow-opaco, $yellow-opaco 8%);
+    }
+
+    .item__green {
+        background-color: hsla(166, 100%, 37%, 0.082);
+        
+        .item__name--green {
+            color: $green-teal;
+        }
+    }
+    
+    .item__green:hover {
+        $green: hsla(166, 100%, 37%, 0.507);
+        $green-opaco: hsla(166, 100%, 37%, 0.103);
+        background-image: linear-gradient(to right, $green, $green 61%, $green-opaco, $green-opaco 39%);
+    }
+
+    .item__cobalt {
+        background-color: hsla(234, 85%, 45%, 0.116);
+        
+        .item__name--cobalt {
+            color: $cobalt-blue;
+        }
+    }
+    
+    .item__cobalt:hover {
+        $cobalt: hsla(234, 85%, 45%, 0.555);
+        $cobalt-opaco: hsla(234, 85%, 45%, 0.082);
+        background-image: linear-gradient(to right, $cobalt, $cobalt 72%, $cobalt-opaco, $cobalt-opaco 28%);
+    }
+    
+
+}
+
+.points {
+    color: $dark-gray-blue;
+    
+    span {
+        color: #000;
+        font-weight: 700;
+    }
+}
+
+.cta {
+    display: block;
+    width: 100%;
+    margin: 40px auto;
+    padding: 20px 0;
+    border-radius: 50px;
+    background-color: $dark-gray-blue;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+}
